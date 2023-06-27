@@ -1,20 +1,20 @@
 import React from "react";
 import { FaCoins } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // CSS
 import "./Navbar.css";
 const Navbar = () => {
   return (
-    <div>
+    <Link to="/">
       <div className="navBar">
         <FaCoins className="icon" />
         <h1>
-          Green <span className="purple">Finder</span>
+          Coins <span className="purple">List</span>
         </h1>
       </div>
-    </div>
+    </Link>
   );
 };
 
 export default Navbar;
- 
